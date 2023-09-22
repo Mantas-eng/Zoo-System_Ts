@@ -1,6 +1,5 @@
 import Animal from './Animal';
 
-
 class JumpAndRunAnimal extends Animal {
     constructor(name: string, age: number) {
         super(name, age);

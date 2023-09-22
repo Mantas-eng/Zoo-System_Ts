@@ -1,4 +1,3 @@
-import Animal from './Animal';
 import JumpAndRunAnimal from './JumpAndRunAnimal';
 
 class Lion extends JumpAndRunAnimal {

@@ -1,6 +1,5 @@
 import SleepAndWalkAnimal from './SleepAndWalkAnimal';
 
-
 class Penguin extends SleepAndWalkAnimal {
 
     maxSpeed: number;
