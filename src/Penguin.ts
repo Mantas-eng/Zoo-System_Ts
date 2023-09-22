@@ -1,14 +1,16 @@
-import Animal from './Animal';
+import SleepAndWalkAnimal from './SleepAndWalkAnimal';
 
 
-class Penguin extends Animal {
-    constructor(name: string, age: number) {
+class Penguin extends SleepAndWalkAnimal {
+
+    maxSpeed: number;
+    origin: string;
+    constructor(name: string, age: number, maxSpeed: number, origin: string) {
         super(name, age);
+        this.maxSpeed = maxSpeed;
+        this.origin = origin;
     }
 
-    makeSound(): void {
-        console.log(`${this.name} makes a cute honking sound!`);
-    }
 }
 
 export default Penguin;

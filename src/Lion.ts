@@ -1,13 +1,15 @@
 import Animal from './Animal';
+import JumpAndRunAnimal from './JumpAndRunAnimal';
 
-class Lion extends Animal {
-    constructor(name: string, age: number) {
+class Lion extends JumpAndRunAnimal {
+
+    outsideStatus: boolean;
+
+    constructor(name: string, age: number, outsideStatus: boolean) {
         super(name, age);
+        this.outsideStatus = outsideStatus;
     }
 
-    makeSound() {
-        console.log(`${this.name}`);
-    }
 }
 
 export default Lion;
