@@ -1,3 +1,5 @@
+import Animal from './Animal';
+
 class Lion extends Animal {
     constructor(name: string, age: number) {
         super(name, age);
@@ -7,3 +9,5 @@ class Lion extends Animal {
         console.log(`${this.name}`);
     }
 }
+
+export default Lion;

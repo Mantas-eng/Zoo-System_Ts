@@ -1,3 +1,5 @@
+import Animal from './Animal';
+
 class Elephant extends Animal {
     name: string;
     age: number;
@@ -12,3 +14,4 @@ class Elephant extends Animal {
         console.log(`${this.name}`);
     }
 }
+export default Elephant;
