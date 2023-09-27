@@ -1,28 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class JumpAndRunAnimal {
-    constructor(public name: string, public age: number) { }
-
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
     jump() {
         console.log(`${this.name} is jumping`);
     }
-
     run() {
         console.log(`${this.name} is running`);
     }
-
     makeSound() {
         console.log(`${this.name} makes a sound`);
     }
 }
-
 class Lion extends JumpAndRunAnimal {
-    outsideStatus: boolean;
-
-    constructor(name: string, age: number, outsideStatus: boolean) {
+    constructor(name, age, outsideStatus) {
         super(name, age);
         this.outsideStatus = outsideStatus;
     }
 }
-
-export default Lion;
-
-
+exports.default = Lion;

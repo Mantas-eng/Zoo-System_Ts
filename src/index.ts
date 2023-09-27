@@ -13,10 +13,10 @@ penguin.makeSound();
 const genericAnimal = new Animal("Generic Animal", 3);
 genericAnimal.makeSound();
 
-const elephant = new Elephant("Elephant", 20, 5000);
+const elephant = new Elephant("Elephant", 20);
 
 const zookeeper = new Zookeeper();
-penguin.sleep();
+penguin.swim();
 lion.jump();
 elephant.hunt();
 

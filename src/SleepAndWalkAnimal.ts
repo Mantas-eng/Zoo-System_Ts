@@ -1,18 +1,8 @@
-import Animal from './Animal';
-
-class SleepAndWalkAnimal extends Animal {
-    constructor(name: string, age: number) {
-        super(name, age);
-    }
-
-    sleep() {
-        console.log(`${this.name} is sleeping`);
-
-    }
-
-    walk() {
-        console.log(`${this.name} is walking`);
-    }
+interface SleepAndWalkAnimal {
+    name: string;
+    age: number;
+    sleep(): void;
+    walk(): void;
 }
 
 export default SleepAndWalkAnimal;
